@@ -95,6 +95,17 @@
     return @"";
 }
 
+// X-PHONETIC-FIRST-NAME or X-PHONETIC-LAST-NAME
+-(NSString*) __phoneticNameForPerson:(ABRecordRef)person
+{
+    if (ABPersonGetCompositeNameFormat() == kABPersonCompositeNameFormatFirstNameFirst) {
+        return [NSString stringWithFormat:@"%@ %@", CFBridgingRelease(ABRecordCopyValue(person, kABPersonFirstNamePhoneticProperty)), CFBridgingRelease(ABRecordCopyValue(person, kABPersonLastNamePhoneticProperty))];        
+    } else {
+        return [NSString stringWithFormat:@"%@ %@", CFBridgingRelease(ABRecordCopyValue(person, kABPersonLastNamePhoneticProperty)), CFBridgingRelease(ABRecordCopyValue(person, kABPersonFirstNamePhoneticProperty))];
+    }
+    return @"";
+}
+
 -(void) save:(id)sender
 {
     CFErrorRef err = nil;
@@ -152,6 +163,7 @@
     
     ABRecordRef person = CFBridgingRetain([list objectAtIndex:indexPath.row]);
     cell.textLabel.text = [self __nameForPerson:person];
+    cell.detailTextLabel.text = [self __phoneticNameForPerson:person];
     
     if ([selectedPersons containsObject:[list objectAtIndex:indexPath.row]]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
