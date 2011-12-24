@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		570AA10B14A57435003735D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570AA10A14A57434003735D3 /* UIKit.framework */; };
+		570AA10D14A57435003735D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570AA10C14A57435003735D3 /* Foundation.framework */; };
+		570AA10F14A57435003735D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570AA10E14A57435003735D3 /* CoreGraphics.framework */; };
+		570AA11514A57435003735D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 570AA11314A57435003735D3 /* InfoPlist.strings */; };
+		570AA11714A57435003735D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 570AA11614A57435003735D3 /* main.m */; };
+		570AA11B14A57435003735D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 570AA11A14A57435003735D3 /* AppDelegate.m */; };
+		570AA12214A57444003735D3 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570AA12114A57444003735D3 /* AddressBook.framework */; };
+		570AA12514A5745D003735D3 /* VCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570AA12414A5745D003735D3 /* VCardListViewController.m */; };
+		570AA12C14A5A421003735D3 /* VCartConvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570AA12B14A5A421003735D3 /* VCartConvertViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		570AA10614A57434003735D3 /* VCardImporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCardImporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		570AA10A14A57434003735D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		570AA10C14A57435003735D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		570AA10E14A57435003735D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		570AA11214A57435003735D3 /* VCardImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VCardImporter-Info.plist"; sourceTree = "<group>"; };
+		570AA11414A57435003735D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		570AA11614A57435003735D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		570AA11814A57435003735D3 /* VCardImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VCardImporter-Prefix.pch"; sourceTree = "<group>"; };
+		570AA11914A57435003735D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		570AA11A14A57435003735D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		570AA12114A57444003735D3 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		570AA12314A5745D003735D3 /* VCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardListViewController.h; sourceTree = "<group>"; };
+		570AA12414A5745D003735D3 /* VCardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardListViewController.m; sourceTree = "<group>"; };
+		570AA12A14A5A421003735D3 /* VCartConvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCartConvertViewController.h; sourceTree = "<group>"; };
+		570AA12B14A5A421003735D3 /* VCartConvertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCartConvertViewController.m; sourceTree = "<group>"; };
+		570AA13114A5B5F0003735D3 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		570AA10314A57434003735D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570AA12214A57444003735D3 /* AddressBook.framework in Frameworks */,
+				570AA10B14A57435003735D3 /* UIKit.framework in Frameworks */,
+				570AA10D14A57435003735D3 /* Foundation.framework in Frameworks */,
+				570AA10F14A57435003735D3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		570AA0FB14A57434003735D3 = {
+			isa = PBXGroup;
+			children = (
+				570AA13114A5B5F0003735D3 /* README */,
+				570AA11014A57435003735D3 /* VCardImporter */,
+				570AA10914A57434003735D3 /* Frameworks */,
+				570AA10714A57434003735D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		570AA10714A57434003735D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				570AA10614A57434003735D3 /* VCardImporter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		570AA10914A57434003735D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				570AA12114A57444003735D3 /* AddressBook.framework */,
+				570AA10A14A57434003735D3 /* UIKit.framework */,
+				570AA10C14A57435003735D3 /* Foundation.framework */,
+				570AA10E14A57435003735D3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		570AA11014A57435003735D3 /* VCardImporter */ = {
+			isa = PBXGroup;
+			children = (
+				570AA11914A57435003735D3 /* AppDelegate.h */,
+				570AA11A14A57435003735D3 /* AppDelegate.m */,
+				570AA11114A57435003735D3 /* Supporting Files */,
+				570AA12314A5745D003735D3 /* VCardListViewController.h */,
+				570AA12414A5745D003735D3 /* VCardListViewController.m */,
+				570AA12A14A5A421003735D3 /* VCartConvertViewController.h */,
+				570AA12B14A5A421003735D3 /* VCartConvertViewController.m */,
+			);
+			path = VCardImporter;
+			sourceTree = "<group>";
+		};
+		570AA11114A57435003735D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				570AA11214A57435003735D3 /* VCardImporter-Info.plist */,
+				570AA11314A57435003735D3 /* InfoPlist.strings */,
+				570AA11614A57435003735D3 /* main.m */,
+				570AA11814A57435003735D3 /* VCardImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		570AA10514A57434003735D3 /* VCardImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570AA11E14A57435003735D3 /* Build configuration list for PBXNativeTarget "VCardImporter" */;
+			buildPhases = (
+				570AA10214A57434003735D3 /* Sources */,
+				570AA10314A57434003735D3 /* Frameworks */,
+				570AA10414A57434003735D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VCardImporter;
+			productName = VCardImporter;
+			productReference = 570AA10614A57434003735D3 /* VCardImporter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		570AA0FD14A57434003735D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 570AA10014A57434003735D3 /* Build configuration list for PBXProject "VCardImporter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 570AA0FB14A57434003735D3;
+			productRefGroup = 570AA10714A57434003735D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				570AA10514A57434003735D3 /* VCardImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		570AA10414A57434003735D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570AA11514A57435003735D3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		570AA10214A57434003735D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570AA11714A57435003735D3 /* main.m in Sources */,
+				570AA11B14A57435003735D3 /* AppDelegate.m in Sources */,
+				570AA12514A5745D003735D3 /* VCardListViewController.m in Sources */,
+				570AA12C14A5A421003735D3 /* VCartConvertViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		570AA11314A57435003735D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				570AA11414A57435003735D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		570AA11C14A57435003735D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		570AA11D14A57435003735D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		570AA11F14A57435003735D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VCardImporter/VCardImporter-Prefix.pch";
+				INFOPLIST_FILE = "VCardImporter/VCardImporter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		570AA12014A57435003735D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VCardImporter/VCardImporter-Prefix.pch";
+				INFOPLIST_FILE = "VCardImporter/VCardImporter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		570AA10014A57434003735D3 /* Build configuration list for PBXProject "VCardImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570AA11C14A57435003735D3 /* Debug */,
+				570AA11D14A57435003735D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570AA11E14A57435003735D3 /* Build configuration list for PBXNativeTarget "VCardImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570AA11F14A57435003735D3 /* Debug */,
+				570AA12014A57435003735D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 570AA0FD14A57434003735D3 /* Project object */;
+}
